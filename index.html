@@ -3,64 +3,128 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lhuis Ruiz</title>
-
-
-
-
-
-
-
-
-
-    <link rel="canonical" href="https://maia9.mypixieset.com/">
-    <meta property="og:site_name" content="Maia">
-    <meta property="og:title" content="Maia">
-    <meta property="og:url" content="https://maia9.mypixieset.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images-pw.pixieset.com/elementfield/0J4MbKw/IMG_2418-c2aabbff-1500.jpg">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="683">
-    <meta itemprop="name" content="Maia">
-    <meta itemprop="url" content="https://maia9.mypixieset.com/">
-    <meta itemprop="thumbnailUrl"
-        content="https://images-pw.pixieset.com/elementfield/0J4MbKw/IMG_2418-c2aabbff-1500.jpg">
-    <meta name="twitter:title" content="Maia">
-    <meta name="twitter:image" content="https://images-pw.pixieset.com/elementfield/0J4MbKw/IMG_2418-c2aabbff-1500.jpg">
-    <meta name="twitter:url" content="https://maia9.mypixieset.com/">
-    <meta name="twitter:card" content="summary">
-    <meta name="description" content>
-
-
-
-
-
-
-
-    <style>
-        body {
-            width: 100%;
-            height: auto;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        img {
-            width: 80%;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+h1, p{
+    color: #fff;
+    text-shadow:  1px 2px 15px  #000;
+}
+    body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        align-items: center;
+        background-image: url('IMG_4358.jpg'); /* Ruta de la imagen */
+            background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+            background-repeat: no-repeat; /* Evita que se repita la imagen */
+            background-position: center center; /* Centra la imagen horizontal y verticalmente */
+            background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+    }
+
+    .img {
+        width: 200px;
+        border-radius: 50%;
+        height: 200px;
+        box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.144);
+
+    }
+
+    .d1 {
+        width: 100%;
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .d2 {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    button {
+        margin-top: 50px;
+        width: 300px;
+        height: 45px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .ico {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .vvv{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .bt-msj-descargar{
+        margin: 30px;
+    }
+</style>
 
 <body>
-    <script>
-        setTimeout(function () {
-            window.location.href = 'https://music.youtube.com/watch?v=kUwG_iX2-2g&si=KMWMVtBbd1uLSkT-'
-        }, 1000 * 1)
-    </script>
+    <div class="d1">
+        <img class="img" src="_MG_9188(1).jpg">
+        <h1 style="margin-top: 30px;">Eliseo Fotos</h1>
+        <p style="margin-top: 10px;" >Contacto: 114382987</p>
+    </div>
+    
+    <div class="d2">
+      <a href="https://photos.app.goo.gl/ES6mEcMp9yUGbKMa9">  <button>Galeria <img class="ico" src="Google_Photos_icon_(2020).svg.png" alt=""></button></a>
+        <button onclick="qr();">Fotos 3D <img class="ico" src="unnamed.jpg" alt=""></button>
+        <button>Videos <img class="ico" src="Youtube_logo.png" alt=""></button>
+        <a href="https://apk.e-droid.net/apk/app3452090-dmvkxw.apk?v=2"><button>Mi Juego <img class="ico" src="brain.png" alt=""></button></a>
+    </div>
+    <p style="color: #fff; margin-top: 300px; margin-bottom: 20px;">Creado Por Lhuis Ruiz</p>
 </body>
+<script>
+    function qr() {
+    Swal.fire({
+        html:
+            '<div class="vvv">' +
+            '  <a href="https://play.google.com/store/apps/details?id=com.artivive" target="_blank"> <button  class="bt-msj-descargar" >Android</button></a>' +
+            '<a href="https://apps.apple.com/app/artivive/id1188737494" target="_blank"> <button  class="bt-msj-descargar" >Ios</button></a>',        //tamaño
+        willOpen: '4',
+        Button: '5',
+        imageWidth: 300,
+        imageHeight: 400,
+        //cerrar,
+        showCloseButton: true,
+        showConfirmButton: false,
+        background: '#0798ec',
+        backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+    })
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>
