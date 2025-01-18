@@ -95,7 +95,10 @@
     }
 
     .bt-msj-descargar {
+        max-width: 100%;
         margin: 10px;
+        background-color: #000;
+        color: #fff;
     }
 
     .qr {
@@ -113,7 +116,7 @@
 
     .v-v {
         width: 100%;
-
+        border-radius: 10px;
     }
 
     .img-gb {
@@ -163,7 +166,7 @@
             html:
                 '<div class="vvv">' +
                 '<video class="v-v" autoplay controls muted src="qwqwqw.mp4"></video>' +
-                '<p  style="color: #fff; margin-top: 30px; margin-bottom: 20px;">Descarga Artevive, y mira la magia</p>' +
+                '<p  style="color: #000; margin-top: 30px; margin-bottom: 20px;">Descarga Artevive y mira la magia.</p>' +
                 '<a href="https://play.google.com/store/apps/details?id=com.artivive" target="_blank"> <button  class="bt-msj-descargar" >Android</button></a>' +
                 '<a href="https://apps.apple.com/app/artivive/id1188737494" target="_blank"> <button  class="bt-msj-descargar" >Ios</button></a>',        //tamaño
             willOpen: '4',
@@ -173,7 +176,7 @@
             //cerrar,
             showCloseButton: true,
             showConfirmButton: false,
-            background: '#000',
+            background: '#fff',
             backdrop: `
         rgba(73, 73, 73, 0.5)
           left top
@@ -207,7 +210,7 @@
         Swal.fire({
             html:
                 '<div class="vvv">' +
-                '    <img class="img-gb" src="aaa.jpg" alt="">' ,
+                '    <img class="img-gb" src="aaa.jpg" alt="">',
             willOpen: '4',
             Button: '5',
             imageWidth: 300,
