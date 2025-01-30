@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliseo</title>
     <link rel="icon" href="img/aaa.jpg" type="image/x-icon">
+
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(reg => console.log('Service Worker registrado', reg))
+                .catch(err => console.error('Error registrando el Service Worker', err));
+        }
+    </script>
 </head>
+
+</script>
 <style>
     * {
         margin: 0;
@@ -164,11 +175,12 @@
 <body>
     <div class="d1">
         <img onclick="per();" class="img" src="img/aaa.jpg">
-        <h1 style="margin-top: 30px;">Eliseo Album de Fotos</h1>
+        <h1 style="margin-top: 30px;">Eliseo Album de Fotos.</h1>
         <a href="https://bit.ly/lhuisruiz">
             <p style="margin-top: 10px;">Contacto: www.LhuisRuiz.com</p>
         </a>
     </div>
+    <button id="installButton" style="padding: 10px; font-size: 16px; cursor: pointer;">Instalar Aplicación</button>
     <div class="d2">
         <button onclick="foto()">Galeria <img class="ico" src="img/Google_Photos_icon_(2020).svg.png" alt=""></button>
         <button onclick="D();">Fotos 3D <img class="ico" src="img/unnamed.jpg" alt=""></button>
