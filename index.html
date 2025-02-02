@@ -7,14 +7,23 @@
     <title>Eliseo</title>
     <link rel="icon" href="img/aaa.jpg" type="image/x-icon">
 
+
+    <meta name="description"
+        content="Una lista de las entradas del marco A enviadas a la competencia js13kGames 2017, que se utiliza como ejemplo para los artículos de MDN sobre Aplicaciones Web Progresivas" />
+    <meta name="author" content="end3r" />
+    <meta name="theme-color" content="#B12A34" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="icons/icon-512.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="js13kpwa.webmanifest" />
+    <script src="data/games.js" defer></script>
+    <script src="app.js" defer></script>
+
+
+
     <link rel="manifest" href="manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.log('Service Worker registrado', reg))
-                .catch(err => console.error('Error registrando el Service Worker', err));
-        }
-    </script>
+
 </head>
 
 </script>
@@ -148,7 +157,9 @@
 
     @media all and (max-width: 300px) {
         button {
-            width: 95%;        }
+            width: 95%;
+        }
+
         a {
             min-width: 100%;
             display: flex;
@@ -169,9 +180,9 @@
 
         }
     }
- 
 </style>
 <a href="http://"></a>
+
 <body>
     <div class="d1">
         <img onclick="per();" class="img" src="img/aaa.jpg">
@@ -183,9 +194,9 @@
     <div class="d2">
         <button onclick="foto()">Galeria <img class="ico" src="img/Google_Photos_icon_(2020).svg.png" alt=""></button>
         <button onclick="D();">Fotos 3D <img class="ico" src="img/unnamed.jpg" alt=""></button>
-        <button>Videos <img class="ico" src="img/Youtube_logo.png" alt=""></button>
-        <a href="https://lhuisruiz.github.io/search/" ><button>Mi Juego <img class="ico"
-                    src="img/brain.png" alt=""></button></a>
+        <button onclick="video()">Videos <img class="ico" src="img/Youtube_logo.png" alt=""></button>
+        <a href="https://lhuisruiz.github.io/search/"><button>Mi Juego <img class="ico" src="img/brain.png"
+                    alt=""></button></a>
     </div>
     <div class="qr">
         <img onclick="qr();" class="img-qr" src="img/28695.png" alt="">
@@ -284,6 +295,30 @@
         `,
         })
     }
+
+    function video() {
+        Swal.fire({
+            html:
+                '<div class="vvv">' +
+                '<img class="img-gb" src="img/youtube.png" alt="">' +
+                '<b  style="margin-top: 20px;" >"No olvides guadar la playlist, te notificaremos cuando los videos estén disponibles. 💕"</b>' +     //tamaño
+                '<a href="https://www.youtube.com/playlist?list=PLdUxrqUNYw6pIxHORv98Ax1Z1NpdprGnD" target="_blank"> <button  style="color: #fff; background: #000; margin: 10px;" class="bt-msj-descargar" >Abrir Canal</button></a>',        //tamaño    //tamaño
+            willOpen: '4',
+            Button: '5',
+            imageWidth: 300,
+            imageHeight: 400,
+            //cerrar,
+            showCloseButton: true,
+            showConfirmButton: false,
+            background: '#fff',
+            backdrop: `
+        rgba(73, 73, 73, 0.5)
+          left top
+          no-repeat
+        `,
+        })
+    }
+
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

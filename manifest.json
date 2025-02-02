@@ -1,15 +1,17 @@
+
 {
-    "name": "Eliseo Album ",
-    "short_name": "Eliseo",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "name": "Mi PWA",
+    "short_name": "PWA",
+    "description": "Una aplicación web progresiva de ejemplo",
     "icons": [
         {
             "src": "img/aaa.jpg",
             "sizes": "192x192",
             "type": "image/png"
         }
-    ]
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }
