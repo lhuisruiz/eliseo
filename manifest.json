@@ -1,8 +1,8 @@
 
 {
-    "name": "Mi PWA",
-    "short_name": "PWA",
-    "description": "Una aplicación web progresiva de ejemplo",
+    "name": "Eliseo Fotos ",
+    "short_name": "Eliseo Fotos ",
+    "description": "Eliseo Fotos ",
     "icons": [
         {
             "src": "img/aaa.jpg",
